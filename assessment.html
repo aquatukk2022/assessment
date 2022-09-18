@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>あなたのいいところ診断</title>
+    <link rel="stylesheet" href="assessment.css">
+</head>
+<body>
+    <h1>あなたのいいところは？</h1>
+    <p>診断したい名前を入れてください</p>
+    <input type="text" id="user-name" size="40" maxlength="20">
+      <!-- [input]タグは閉じキー（</>）いらない-->
+      <!-- 
+        属性には JavaScript プログラムから用いる id 属性に加え、type や size 、maxlength という属性も書いています。
+         ・type 属性では、入力の形式（テキストやパスワード、チェックボックス、ラジオボタンなど）を指定します。
+            「type=password」とすると、パスワード入力フォームができる（入力文字が非表示となる）
+         ・size 属性では、入力欄（テキストフィールド）の大きさを設定します。
+         ・maxlength 属性では、この入力欄に入力できる最大の文字数を設定します。文字数＝２０をmax。
+    　 -->
+    <button id="assessment">診断する</button>
+    <div id="result-area"></div>
+    <div id="tweet-area"></div>
+
+
+    <script src="assessment.js"></script>
+    <!-- JavaScriptタグは最後に書く！！　-->
+</body>
+</html>
